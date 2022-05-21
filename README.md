@@ -1,7 +1,7 @@
 # Gestão de Salas 1.0
 
 ## O que é?
-Se trata de uma API para gerir salas de aula e suas respectivas disciplinas, podendo cadastrar salas de aula e agendar aulas específicas para estas salas em um período determinado. A API permite agendar as aulas em salas previamente cadastradas desde que a sala não esteja ocupada durante o período determinado para aula. A capacidade de pessoas em cada sala é requisitada, assim como a quantidade de alunos em cada aula, evitando assim conflitos em relação à lotação.
+Se trata de uma API Rest para gerir salas de aula e suas respectivas disciplinas, podendo cadastrar salas de aula e agendar aulas específicas para estas salas em um período determinado. A API permite agendar as aulas em salas previamente cadastradas desde que a sala não esteja ocupada durante o período determinado para aula. A capacidade de pessoas em cada sala é requisitada, assim como a quantidade de alunos em cada aula, evitando assim conflitos em relação à lotação.
 
 ## Tecnologias utilizadas
 
@@ -34,7 +34,7 @@ Será criada um diretório **gestao-aulas** no diretório da API, após isso, ai
 
 No Windows pode ser necessário usar o comando `source gestao-aulas/Scripts/activate`
 
-Com o ambiente virtual inicilizado, é hora de instalar as dependências do projeto listadas no arquivo **requirements.txt**, para fazer isso, basta digitar o seguinte comando no terminal na raiz do projeto:
+Com o ambiente virtual inicializado, é hora de instalar as dependências do projeto listadas no arquivo **requirements.txt**, para fazer isso, basta digitar o seguinte comando no terminal na raiz do projeto:
 
 `pip install -r requirements.txt`
 
