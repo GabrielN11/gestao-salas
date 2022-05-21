@@ -1,6 +1,6 @@
 #Livrarias
 from flask import request
-from flask_restx import Resource, reqparse, inputs
+from flask_restx import Resource
 
 #Modulos
 from src.server.instance import api
@@ -13,10 +13,6 @@ from src.modelo.sala import sala_request, sala_response
 from src.modelo.resposta import erro_response, sucesso_response
 
 #Rotas
-
-parser = reqparse.RequestParser()
-parser.add_argument('superimportant', 
-type=inputs.boolean, location='args', required=True)
 
 @api.route('/sala')
 class Sala(Resource):
@@ -44,7 +40,7 @@ class Sala(Resource):
         #Acesso ao banco de dados
         try:
             salaDao.criar(nome, capacidade)
-            return { "message": f'Sala "{nome}" registrada com sucesso.' }, 201
+            return { "message": f"Sala '{nome}' registrada com sucesso." }, 201
         except Exception as err:
             return {
                 "error": 'Ocorreu um erro durante o cadastro da sala.'

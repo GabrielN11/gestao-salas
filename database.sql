@@ -15,6 +15,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE SCHEMA `gestao_salas` ;
+
 --
 -- Table structure for table `aula`
 --
@@ -32,7 +34,7 @@ CREATE TABLE `aula` (
   PRIMARY KEY (`id_aula`),
   KEY `fk_aula_table1_idx` (`sala_id`),
   CONSTRAINT `fk_aula_table1` FOREIGN KEY (`sala_id`) REFERENCES `sala` (`id_sala`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,7 +49,7 @@ CREATE TABLE `sala` (
   `nome` varchar(45) NOT NULL,
   `capacidade` int NOT NULL,
   PRIMARY KEY (`id_sala`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
