@@ -52,11 +52,13 @@ Você também pode copiar o script de dentro do arquivo e executá-lo manualment
 
 Após criar o banco de dados, volte a pasta raiz da API e crie um arquivo **env.py**, é onde serão armazenadas as variáveis de ambiente necessárias para o PyMySQL acessar o banco de dados. Dentro deste arquivo, você deve colocar as informações de acesso ao seu banco de dados MySQL, como usuário, senha e porta. Siga o modelo a seguir para criar essas variáveis:
 
-`user = 'user'`
-`password = 'senhaaqui'`
-`host = 'localhost'`
-`port = 3306`
-`database = 'gestao_salas'`
+```python
+user = 'user'
+password = 'senhaaqui'
+host = 'localhost'
+port = 3306
+database = 'gestao_salas'
+```
 
 ## Executando a API
 
