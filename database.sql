@@ -16,6 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE SCHEMA `gestao_salas` ;
+USE gestao_salas;
 
 --
 -- Table structure for table `aula`
