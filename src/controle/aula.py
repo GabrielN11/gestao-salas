@@ -39,6 +39,8 @@ class Aula(Resource):
         #Validações
         try:
             qtdAlunos = int(dados['quantidade_alunos'])
+            if(qtdAlunos < 1):
+                return {"error": "Quantidade de alunos precisa ser maior do que zero."}, 400
         except:
             return {"error": "Quantidade de alunos precisa ser um valor inteiro."}, 400
 

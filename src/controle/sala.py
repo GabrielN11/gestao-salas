@@ -31,6 +31,8 @@ class Sala(Resource):
         #Validações
         try:
             capacidade = int(dados['capacidade'])
+            if capacidade < 1:
+                return {"error": 'Capacidade precisa ser maior do que zero.'}
         except:
             return { "error": 'Capacidade precisa ser um valor inteiro.' }, 400
         
